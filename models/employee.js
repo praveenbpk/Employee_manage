@@ -4,29 +4,25 @@ const employeeSchema = new mongoose.Schema({
       type:String,
       required:true,
       min:6,
-      max:255,
-      unique:true
+      max:255
     },
     lastName:{
         type:String,
         required:true,
-        min:6,
-        max:255,
-        unique:true
+        min:5,
+        max:255
       },
     email:{
         type:String,
         required:true,
-        max:255,
-        min:6,
-        unique:true,
+        max:255
+        
     },
     location:{
         type:String,
         required:true,
         max:255,
-        min:6,
-        unique:true,
+        min:5
     },
     adharId:{
         type:Number,
@@ -36,9 +32,6 @@ const employeeSchema = new mongoose.Schema({
     experience:{
         type:String,
         required:true,
-        max:255,
-        min:6,
-        unique:true,
     }
    
   
